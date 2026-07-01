@@ -220,6 +220,10 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.main-grid .result-card:nth-child(-n + 2) {
+  margin-inline: 10px;
+}
+
 .main-grid .result-card:nth-child(1) {
   grid-column: span 2;
 }
@@ -233,8 +237,14 @@ h1 {
 }
 
 .corne-featured-grid {
+  width: min(1040px, 100%);
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-bottom: 18px;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.corne-featured-grid .result-card {
+  aspect-ratio: 3 / 2.55;
 }
 
 .result-card {
@@ -242,7 +252,7 @@ h1 {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   border: 0;
-  border-radius: 6px;
+  border-radius: 12px;
   background: transparent;
   box-shadow: none;
   cursor: pointer;
@@ -255,7 +265,7 @@ h1 {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  border-radius: 6px;
+  border-radius: 12px;
   transition: opacity 220ms ease, transform 420ms ease;
 }
 
