@@ -237,14 +237,14 @@ h1 {
 }
 
 .corne-featured-grid {
-  width: min(1040px, 100%);
+  width: min(1120px, 100%);
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 16px;
 }
 
 .corne-featured-grid .result-card {
-  aspect-ratio: 3 / 2.55;
+  aspect-ratio: 4 / 5;
 }
 
 .result-card {
@@ -252,7 +252,7 @@ h1 {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   border: 0;
-  border-radius: 12px;
+  border-radius: 18px;
   background: transparent;
   box-shadow: none;
   cursor: pointer;
@@ -265,7 +265,7 @@ h1 {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  border-radius: 12px;
+  border-radius: 18px;
   transition: opacity 220ms ease, transform 420ms ease;
 }
 
