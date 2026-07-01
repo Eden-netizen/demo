@@ -7,12 +7,17 @@ const galleries = {
       ["000027.png", "000028.png", "000030.png", "000056.png"]
     ]
   },
-  corne: {
+  "corne-featured": {
     root: "assets/corne",
     groups: [
-      ["000050.png", "000159.png", "000114.png", "000200.png", "000000.png"],
-      ["000010.png", "000022.png", "000023.png", "000045.png", "000052.png"],
-      ["000075.png", "000141.png", "000152.png", "000197.png"]
+      ["000050.png", "000159.png", "000114.png", "000200.png"]
+    ]
+  },
+  "corne-carousel": {
+    root: "assets/corne",
+    groups: [
+      ["000000.png", "000010.png", "000022.png", "000023.png", "000045.png"],
+      ["000052.png", "000075.png", "000141.png", "000152.png", "000197.png"]
     ]
   },
   anime: {
@@ -60,8 +65,8 @@ function renderGrid(name) {
 }
 
 function renderCorneCarousel() {
-  const target = document.querySelector('[data-gallery="corne"]');
-  const gallery = galleries.corne;
+  const target = document.querySelector('[data-gallery="corne-carousel"]');
+  const gallery = galleries["corne-carousel"];
   if (!target) return;
 
   gallery.groups.forEach((group) => {
@@ -91,6 +96,7 @@ function renderCorneCarousel() {
 }
 
 renderGrid("main");
+renderGrid("corne-featured");
 renderCorneCarousel();
 renderGrid("anime");
 renderGrid("text");

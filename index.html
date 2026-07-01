@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OSOR</title>
     <meta name="description" content="OSOR project page with object removal visualizations and benchmarks.">
-    <meta name="page-version" content="2026-07-02-corne-5-5-4">
+    <meta name="page-version" content="2026-07-02-corne-4-plus-5-carousel">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -68,10 +68,11 @@
           <p>We introduce CORNE, a large-scale training dataset for effect-aware object removal with 280K removal pairs, together with CORNE-Val.</p>
           <span>Press any image to see the transformation.</span>
         </div>
-        <div class="carousel">
+        <div class="result-grid corne-featured-grid" data-gallery="corne-featured"></div>
+        <div class="carousel corne-carousel">
           <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous CORNE page">&lt;</button>
           <div class="carousel-viewport">
-            <div class="carousel-track" data-gallery="corne"></div>
+            <div class="carousel-track" data-gallery="corne-carousel"></div>
           </div>
           <button class="carousel-button" type="button" data-carousel-next aria-label="Next CORNE page">&gt;</button>
         </div>
