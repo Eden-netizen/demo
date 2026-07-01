@@ -31,10 +31,6 @@ function createCard(root, filename) {
   card.type = "button";
   card.setAttribute("aria-label", `Show transformed result for ${filename}`);
 
-  const label = document.createElement("span");
-  label.className = "badge";
-  label.textContent = "Before / After";
-
   const before = document.createElement("img");
   before.className = "before";
   before.src = `${root}/before/${filename}`;
@@ -47,7 +43,7 @@ function createCard(root, filename) {
   after.alt = `After ${filename}`;
   after.loading = "lazy";
 
-  card.append(label, before, after);
+  card.append(before, after);
   card.addEventListener("click", () => card.classList.toggle("is-active"));
   card.addEventListener("mouseleave", () => card.classList.remove("is-active"));
   return card;

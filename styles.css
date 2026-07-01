@@ -67,10 +67,10 @@ a {
 }
 
 .hero {
-  min-height: 430px;
+  min-height: 620px;
   display: grid;
   place-items: center;
-  padding: 70px 18px 54px;
+  padding: 72px 18px 66px;
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(238, 244, 249, 0.94), rgba(251, 252, 255, 0.94)),
@@ -78,7 +78,7 @@ a {
 }
 
 .hero-inner {
-  width: min(980px, 100%);
+  width: min(1080px, 100%);
   text-align: center;
 }
 
@@ -91,8 +91,8 @@ a {
 
 h1 {
   margin: 0;
-  font-size: clamp(54px, 10vw, 112px);
-  line-height: 0.94;
+  font-size: clamp(34px, 5.6vw, 70px);
+  line-height: 1.06;
   letter-spacing: 0;
 }
 
@@ -108,6 +108,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+  margin-top: 28px;
 }
 
 .resource-links a {
@@ -129,6 +130,48 @@ h1 {
   border-color: var(--accent);
   background: var(--accent);
   color: #ffffff;
+}
+
+.paper-info {
+  width: min(980px, 100%);
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.paper-info h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.paper-info p {
+  margin: 0 auto;
+  color: #343a46;
+}
+
+.author-list {
+  width: min(920px, 100%);
+  font-size: 16px;
+}
+
+.affiliations {
+  width: min(960px, 100%);
+  margin-top: 8px !important;
+  color: var(--muted) !important;
+  font-size: 14px;
+}
+
+.abstract-block {
+  width: min(960px, 100%);
+  margin: 30px auto 0;
+}
+
+.abstract-block p {
+  color: #303743;
+  font-size: 15px;
+  line-height: 1.72;
+  text-align: justify;
 }
 
 .section {
@@ -192,20 +235,20 @@ h1 {
 .result-card {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   border: 1px solid rgba(18, 24, 34, 0.14);
   border-radius: 8px;
-  background: #dfe6ef;
+  background: #ffffff;
   box-shadow: var(--shadow);
   cursor: pointer;
 }
 
 .result-card img {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  object-fit: contain;
   transition: opacity 220ms ease, transform 420ms ease;
 }
 
@@ -224,19 +267,6 @@ h1 {
 .result-card.is-active .after {
   opacity: 1;
   transform: scale(1.015);
-}
-
-.badge {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 2;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: rgba(18, 24, 34, 0.74);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
 }
 
 .carousel {
