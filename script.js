@@ -16,8 +16,8 @@ const galleries = {
   "corne-carousel": {
     root: "assets/corne",
     groups: [
-      ["000000.png", "000010.png", "000022.png", "000023.png", "000045.png"],
-      ["000052.png", "000075.png", "000141.png", "000152.png", "000197.png"]
+      ["000000.png", "000010.png", "000023.png", "000045.png"],
+      ["000075.png", "000141.png", "000152.png", "000197.png"]
     ]
   },
   anime: {
