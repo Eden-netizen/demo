@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSOR</title>
+    <meta name="description" content="OSOR project page with object removal visualizations and benchmarks.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="https://github.com/Zhouqm-Git/osor">OSOR</a>
+        <div class="nav-links">
+          <a href="#visual-results">Results</a>
+          <a href="#corne">CORNE</a>
+          <a href="#benchmarks">Benchmarks</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Object Removal with Semantics-Oriented Reasoning</p>
+          <h1>OSOR</h1>
+          <p class="subtitle">
+            A project page for robust object removal, perceptual training data, and removal benchmark suites.
+          </p>
+          <div class="resource-links" aria-label="Project resources">
+            <a href="https://arxiv.org/abs/2606.28094" target="_blank" rel="noreferrer">arXiv</a>
+            <a href="https://huggingface.co/QinmingZhou/OSOR" target="_blank" rel="noreferrer">Model</a>
+            <a href="https://modelscope.cn/datasets/ZhouqmR/CORNE" target="_blank" rel="noreferrer">CORNE</a>
+            <a href="https://huggingface.co/datasets/QinmingZhou/CORNE-Val" target="_blank" rel="noreferrer">CORNE-Val</a>
+            <a href="https://huggingface.co/datasets/QinmingZhou/AnimeEraseBench" target="_blank" rel="noreferrer">AnimeEraseBench</a>
+            <a href="https://huggingface.co/datasets/QinmingZhou/TextEraseBench" target="_blank" rel="noreferrer">TextEraseBench</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="visual-results" class="section">
+        <div class="section-heading">
+          <h2>Visual Results</h2>
+          <p>来自 RORD-Val 和 RemovalBench</p>
+          <span>Press any image to see the transformation.</span>
+        </div>
+        <div class="result-grid main-grid" data-gallery="main"></div>
+      </section>
+
+      <section id="corne" class="section band">
+        <div class="section-heading">
+          <h2>CORNE</h2>
+          <p>我们引进 CORNE 数据集，一个用于效果感知物体移除的大规模训练数据集，有 280K removal pairs，以及 CORNE-Val。</p>
+          <span>Press any image to see the transformation.</span>
+        </div>
+        <div class="carousel">
+          <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous CORNE page">‹</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-gallery="corne"></div>
+          </div>
+          <button class="carousel-button" type="button" data-carousel-next aria-label="Next CORNE page">›</button>
+        </div>
+      </section>
+
+      <section id="benchmarks" class="section">
+        <div class="section-heading">
+          <h2>AnimeEraseBench</h2>
+          <p>我们引进 AnimeEraseBench 基准测试，一个面向动漫风格场景的物体移除评测基准。</p>
+          <span>Press any image to see the transformation.</span>
+        </div>
+        <div class="result-grid five-grid" data-gallery="anime"></div>
+      </section>
+
+      <section class="section band">
+        <div class="section-heading">
+          <h2>TextEraseBench</h2>
+          <p>我们引进 TextEraseBench 基准测试，一个用于评估文本叠加层和场景类文本对象的物体移除和修补方法的文本去除基准测试。</p>
+          <span>Press any image to see the transformation.</span>
+        </div>
+        <div class="result-grid five-grid" data-gallery="text"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>OSOR project page.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
