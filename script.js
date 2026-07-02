@@ -1,7 +1,6 @@
 const galleries = {
   main: {
     root: "assets/main",
-    aligned: ["000027.png", "00066.png", "00093.png", "00181.png", "00298.png"],
     groups: [
       ["00120.png", "00195.png"],
       ["00066.png", "00093.png", "00298.png", "00181.png"],
@@ -10,7 +9,6 @@ const galleries = {
   },
   "corne-featured": {
     root: "assets/corne",
-    aligned: ["000114.png", "000159.png"],
     groups: [
       ["000050.png", "000159.png", "000114.png", "000200.png"]
     ]
@@ -24,7 +22,6 @@ const galleries = {
   },
   anime: {
     root: "assets/anime",
-    aligned: ["00080.png", "00133.png"],
     groups: [["00054.png", "00080.png", "00097.png", "00133.png", "00134.png"]]
   },
   text: {
@@ -34,9 +31,7 @@ const galleries = {
 };
 
 function createCard(gallery, filename) {
-  const root = gallery.aligned?.includes(filename)
-    ? gallery.root.replace("assets/", "assets/display/")
-    : gallery.root;
+  const root = gallery.root;
   const card = document.createElement("button");
   card.className = "result-card";
   card.type = "button";

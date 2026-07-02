@@ -239,12 +239,16 @@ h1 {
 .corne-featured-grid {
   width: min(1180px, 100%);
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 18px;
+  margin-bottom: 18px;
 }
 
 .corne-featured-grid .result-card {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 9 / 10;
+}
+
+.corne-featured-grid .result-card img {
+  object-fit: cover;
 }
 
 .result-card {
